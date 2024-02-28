@@ -1,0 +1,41 @@
+.projects {
+	position: relative;
+
+	&__wrap {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	&__slider-wrap {
+		margin-bottom: 70px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 80px;
+	}
+
+	&__text {
+		margin: 0;
+		margin-right: 30px;
+		max-width: 750px;
+		font-weight: 325;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
+.swiper-slide {
+	display: flex;
+	align-items: center;
+	width: fit-content !important;
+}
