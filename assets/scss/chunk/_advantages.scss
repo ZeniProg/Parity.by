@@ -1,6 +1,4 @@
 .advantages {
-	padding: 50px 0;
-
 	&__title {
 		@include adaptive-font(40, 22);
 		margin-bottom: 50px;
@@ -88,70 +86,70 @@
 	}
 }
 
-.advantages-inner {
-	max-width: 985px;
+// .advantages-inner {
+// 	max-width: 985px;
 
-	&__text {
-		margin: 0;
-		margin-bottom: 50px;
-		max-width: 880px;
-		font-weight: 600;
-		line-height: 133%;
+// 	&__text {
+// 		margin: 0;
+// 		margin-bottom: 50px;
+// 		max-width: 880px;
+// 		font-weight: 600;
+// 		line-height: 133%;
 
-		&:last-child {
-			margin: 0;
-		}
+// 		&:last-child {
+// 			margin: 0;
+// 		}
 
-		@media (min-width: 1560px) {
-			font-size: 18px;
-		}
+// 		@media (min-width: 1560px) {
+// 			font-size: 18px;
+// 		}
 
-		@media (max-width: 1200px) {
-			margin-bottom: 30px;
-		}
+// 		@media (max-width: 1200px) {
+// 			margin-bottom: 30px;
+// 		}
 
-		@media (max-width: 768px) {
-			margin-bottom: 20px;
-		}
-	}
+// 		@media (max-width: 768px) {
+// 			margin-bottom: 20px;
+// 		}
+// 	}
 
-	&__content {
-		display: flex;
-		justify-content: space-between;
-		margin-bottom: 50px;
-		gap: 30px;
+// 	&__content {
+// 		display: flex;
+// 		justify-content: space-between;
+// 		margin-bottom: 50px;
+// 		gap: 30px;
 
-		@media (max-width: 1200px) {
-			margin-bottom: 40px;
-		}
+// 		@media (max-width: 1200px) {
+// 			margin-bottom: 40px;
+// 		}
 
-		@media (max-width: 885px) {
-			flex-wrap: wrap;
-			gap: 20px;
-		}
+// 		@media (max-width: 885px) {
+// 			flex-wrap: wrap;
+// 			gap: 20px;
+// 		}
 
-		@media (max-width: 768px) {
-			margin-bottom: 30px;
-		}
-	}
+// 		@media (max-width: 768px) {
+// 			margin-bottom: 30px;
+// 		}
+// 	}
 
-	&__link {
-		color: var(--royal-blue);
+// 	&__link {
+// 		color: var(--royal-blue);
 
-		&:hover {
-			text-decoration: underline;
-		}
-	}
+// 		&:hover {
+// 			text-decoration: underline;
+// 		}
+// 	}
 
-	&--text-small {
-		@include adaptive-font(16, 12);
-		margin: 0;
-		max-width: 465px;
-		font-weight: 600;
-		font-style: italic;
+// 	&--text-small {
+// 		@include adaptive-font(16, 12);
+// 		margin: 0;
+// 		max-width: 465px;
+// 		font-weight: 600;
+// 		font-style: italic;
 
-		@media (min-width: 1560px) {
-			font-size: 16px;
-		}
-	}
-}
+// 		@media (min-width: 1560px) {
+// 			font-size: 16px;
+// 		}
+// 	}
+// }
