@@ -1,11 +1,29 @@
-const swiper = new Swiper('.swiper', {
-	speed: 400,
-	loop: true,
+import Swiper from 'swiper/bundle';
 
-	navigation: {
-		nextEl: '.swiper-btn--next',
-		prevEl: '.swiper-btn--prev',
+const swiper = new Swiper('.swiper-projects', {
+	speed: 600,
+	slidesPerView: 4,
+	slidesPerGroup: 4,
+	spaceBetween: 30,
+
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
 	},
 
-	effect: 'coverflow',
+	effect: 'slide',
+});
+
+const swiperClients = new Swiper('.swiper-clients', {
+	speed: 600,
+	loop: true,
+	slidesPerView: 6,
+	spaceBetween: 70,
+
+	navigation: {
+		nextEl: '.swiper-clients-button-next',
+		prevEl: '.swiper-clients-button-prev',
+	},
+
+	effect: 'slide',
 });
