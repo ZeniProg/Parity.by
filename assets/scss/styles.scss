@@ -11,10 +11,11 @@
 
 // * Подключение стилей swiper-слайдера
 @import 'libs/swiper-bundle.min';
+
 // @import "components/sliders";
 
 // * Main styles
-@import '../components/header/header';
+// @import '../components/header/header';
 @import 'chunk/projects';
 @import 'chunk/services';
 @import 'chunk/advantages';
