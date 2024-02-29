@@ -2,12 +2,12 @@ import Swiper from 'swiper/bundle';
 
 const swiper = new Swiper('.swiper-projects', {
 	speed: 600,
-	slidesPerView: 4,
+	slidesPerView: 'auto',
 	slidesPerGroup: 4,
 	spaceBetween: 30,
 
 	pagination: {
-		el: '.swiper-pagination',
+		el: '.swiper-projects__pagination',
 		clickable: true,
 	},
 
@@ -17,7 +17,7 @@ const swiper = new Swiper('.swiper-projects', {
 const swiperClients = new Swiper('.swiper-clients', {
 	speed: 600,
 	loop: true,
-	slidesPerView: 6,
+	slidesPerView: 'auto',
 	spaceBetween: 70,
 
 	navigation: {
