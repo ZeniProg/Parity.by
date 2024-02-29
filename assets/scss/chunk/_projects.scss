@@ -7,14 +7,6 @@
 		align-items: flex-start;
 	}
 
-	&__slider-wrap {
-		margin-bottom: 70px;
-
-		&:last-child {
-			margin-bottom: 0;
-		}
-	}
-
 	&__inner {
 		display: flex;
 		align-items: center;
@@ -32,10 +24,4 @@
 			margin-right: 0;
 		}
 	}
-}
-
-.swiper-slide {
-	display: flex;
-	align-items: center;
-	width: fit-content !important;
 }
