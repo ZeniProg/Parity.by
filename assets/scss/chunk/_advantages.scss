@@ -1,24 +1,4 @@
 .advantages {
-	&__title {
-		@include adaptive-font(40, 22);
-		margin-bottom: 50px;
-		font-weight: 700;
-		text-transform: uppercase;
-		color: var(--light-color);
-
-		&--color-blue {
-			color: var(--blue-color);
-		}
-
-		@media (min-width: 1560px) {
-			font-size: 40px;
-		}
-
-		@media (max-width: 660px) {
-			margin-bottom: 30px;
-		}
-	}
-
 	&__cards {
 		display: flex;
 		align-items: center;
