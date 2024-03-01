@@ -9,6 +9,9 @@ const swiper = new Swiper('.swiper-projects', {
 	pagination: {
 		el: '.swiper-projects__pagination',
 		clickable: true,
+		renderBullet: function (index, className) {
+			return '<button class="' + className + ' swiper-blue__bullet btn-reset"></button>';
+		},
 	},
 
 	effect: 'slide',
