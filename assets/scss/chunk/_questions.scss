@@ -1,0 +1,53 @@
+.questions-tabs {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	&__header {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		max-width: 750px;
+		gap: 20px;
+
+		&-item {
+			@include adaptive-font(22, 16);
+			padding: 25px 40px;
+			font-weight: 700;
+			line-height: 109%;
+			background-color: var(--mystic-color);
+			cursor: pointer;
+
+			&.active {
+				color: var(--gray-color);
+				background-color: var(--whisper-color);
+			}
+		}
+	}
+
+	&__content {
+		@include adaptive-font(18, 14);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		max-width: 750px;
+
+		&-item {
+			flex-direction: column;
+			gap: 30px;
+		}
+	}
+
+	&__text {
+		margin: 0;
+		line-height: 122%;
+	}
+
+	&__link {
+		color: var(--royal-blue);
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
