@@ -30,3 +30,33 @@ const swiperClients = new Swiper('.swiper-clients', {
 
 	effect: 'slide',
 });
+
+const swiperTextsArticles = new Swiper('.swiper-articles-texts', {
+	speed: 600,
+	loop: true,
+	slidesPerView: 'auto',
+
+	navigation: {
+		nextEl: '.swiper-texts-articles-button-next',
+		prevEl: '.swiper-texts-articles-button-prev',
+	},
+
+	effect: 'slide',
+});
+
+const swiperArticles = new Swiper('.swiper-articles', {
+	speed: 600,
+	slidesPerView: 'auto',
+	slidesPerGroup: 3,
+	spaceBetween: 30,
+
+	pagination: {
+		el: '.swiper-articles__pagination',
+		clickable: true,
+		renderBullet: function (index, className) {
+			return '<button class="' + className + ' swiper-blue__bullet btn-reset"></button>';
+		},
+	},
+
+	effect: 'slide',
+});
