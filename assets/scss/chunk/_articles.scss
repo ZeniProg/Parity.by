@@ -1,4 +1,8 @@
 .articles {
+	&__title {
+		margin-bottom: 30px;
+	}
+
 	&__cards {
 		display: flex;
 		flex-wrap: wrap;
@@ -11,6 +15,10 @@
 
 	&__slider-wrap {
 		margin-bottom: 35px;
+	}
+
+	&__texts-slider-wrap {
+		margin-bottom: 80px;
 	}
 }
 

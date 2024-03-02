@@ -277,6 +277,37 @@
 	}
 }
 
+.texts-slider-wrap {
+	display: flex;
+	align-items: center;
+	width: 1260px;
+	height: 85px;
+}
+
+.swiper-texts {
+	width: 1135px;
+	height: 65px;
+
+	&__text {
+		margin: 0;
+		height: auto;
+		font-weight: 350;
+		line-height: 120%;
+		height: 65px;
+		overflow-y: auto;
+	}
+
+	&__arrows {
+		width: 85px;
+		height: 85px;
+		position: relative;
+	}
+}
+
+.swiper-articles-texts {
+	margin-left: 0 !important;
+}
+
 .articles-slider-wrap {
 	width: 1530px;
 	height: 275px;
