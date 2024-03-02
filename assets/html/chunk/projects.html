@@ -1,10 +1,14 @@
 <section class="projects section">
 	<div class="container">
 		<div class="projects__wrap">
-			<div class="content">
+			<div class="projects__content content">
 				<div
 					class="content__background"
 					style="background: url('@img/projects/background.jpg') no-repeat 80% 45%"
+				></div>
+				<div
+					class="content__background content__background--hidden"
+					style="background: url('@img/projects/background.jpg') no-repeat 27% 45%"
 				></div>
 				<h2 class="content__title big-title">
 					Наши <span class="big-title--color-blue"> клиенты и проекты</span>
@@ -36,7 +40,9 @@
 									</div>
 									<div class="card__inner">
 										<span class="card__date">28 марта 2022</span>
-										<div class="card__arrow"></div>
+										<div class="card__arrow-inner">
+											<div class="card__arrow"></div>
+										</div>
 									</div>
 								</a>
 							</div>
@@ -52,7 +58,9 @@
 									</div>
 									<div class="card__inner">
 										<span class="card__date">28 марта 2022</span>
-										<div class="card__arrow"></div>
+										<div class="card__arrow-inner">
+											<div class="card__arrow"></div>
+										</div>
 									</div>
 								</a>
 							</div>
@@ -68,7 +76,9 @@
 									</div>
 									<div class="card__inner">
 										<span class="card__date">28 марта 2022</span>
-										<div class="card__arrow"></div>
+										<div class="card__arrow-inner">
+											<div class="card__arrow"></div>
+										</div>
 									</div>
 								</a>
 							</div>
@@ -84,7 +94,9 @@
 									</div>
 									<div class="card__inner">
 										<span class="card__date">28 марта 2022</span>
-										<div class="card__arrow"></div>
+										<div class="card__arrow-inner">
+											<div class="card__arrow"></div>
+										</div>
 									</div>
 								</a>
 							</div>
@@ -100,7 +112,9 @@
 									</div>
 									<div class="card__inner">
 										<span class="card__date">28 марта 2022</span>
-										<div class="card__arrow"></div>
+										<div class="card__arrow-inner">
+											<div class="card__arrow"></div>
+										</div>
 									</div>
 								</a>
 							</div>
@@ -116,7 +130,9 @@
 									</div>
 									<div class="card__inner">
 										<span class="card__date">28 марта 2022</span>
-										<div class="card__arrow"></div>
+										<div class="card__arrow-inner">
+											<div class="card__arrow"></div>
+										</div>
 									</div>
 								</a>
 							</div>
@@ -132,7 +148,9 @@
 									</div>
 									<div class="card__inner">
 										<span class="card__date">28 марта 2022</span>
-										<div class="card__arrow"></div>
+										<div class="card__arrow-inner">
+											<div class="card__arrow"></div>
+										</div>
 									</div>
 								</a>
 							</div>
@@ -148,7 +166,9 @@
 									</div>
 									<div class="card__inner">
 										<span class="card__date">28 марта 2022</span>
-										<div class="card__arrow"></div>
+										<div class="card__arrow-inner">
+											<div class="card__arrow"></div>
+										</div>
 									</div>
 								</a>
 							</div>
@@ -164,55 +184,9 @@
 									</div>
 									<div class="card__inner">
 										<span class="card__date">28 марта 2022</span>
-										<div class="card__arrow"></div>
-									</div>
-								</a>
-							</div>
-						</div>
-						<div class="swiper-slide swiper-blue__slide">
-							<div class="swiper-blue__slide-inner">
-								<a class="card link-reset" href="#/">
-									<div class="card__content">
-										<span class="card__activity">Вид Деятельности</span>
-										<h2 class="card__title">
-											Имя проекта или просто заголовок. Может быть длинным. Но это не обязательно.
-										</h2>
-									</div>
-									<div class="card__inner">
-										<span class="card__date">28 марта 2022</span>
-										<div class="card__arrow"></div>
-									</div>
-								</a>
-							</div>
-						</div>
-						<div class="swiper-slide swiper-blue__slide">
-							<div class="swiper-blue__slide-inner">
-								<a class="card link-reset" href="#/">
-									<div class="card__content">
-										<span class="card__activity">Вид Деятельности</span>
-										<h2 class="card__title">
-											Имя проекта или просто заголовок. Может быть длинным. Но это не обязательно.
-										</h2>
-									</div>
-									<div class="card__inner">
-										<span class="card__date">28 марта 2022</span>
-										<div class="card__arrow"></div>
-									</div>
-								</a>
-							</div>
-						</div>
-						<div class="swiper-slide swiper-blue__slide">
-							<div class="swiper-blue__slide-inner">
-								<a class="card link-reset" href="#/">
-									<div class="card__content">
-										<span class="card__activity">Вид Деятельности</span>
-										<h2 class="card__title">
-											Имя проекта или просто заголовок. Может быть длинным. Но это не обязательно.
-										</h2>
-									</div>
-									<div class="card__inner">
-										<span class="card__date">28 марта 2022</span>
-										<div class="card__arrow"></div>
+										<div class="card__arrow-inner">
+											<div class="card__arrow"></div>
+										</div>
 									</div>
 								</a>
 							</div>
@@ -244,11 +218,21 @@
 								src="@img/projects/minsk.png"
 								alt="Минск национальный аэропорт"
 							/>
+							<img
+								class="swiper-clients__client swiper-clients__client--hidden"
+								src="@img/projects/minsk-min.png"
+								alt="Минск национальный аэропорт"
+							/>
 						</div>
 						<div class="swiper-slide swiper-clients__slide">
 							<img
 								class="swiper-clients__client"
 								src="@img/projects/belkommunmash.png"
+								alt="Белкоммунмаш"
+							/>
+							<img
+								class="swiper-clients__client swiper-clients__client--hidden"
+								src="@img/projects/belkommunmash-min.png"
 								alt="Белкоммунмаш"
 							/>
 						</div>
@@ -258,50 +242,58 @@
 								src="@img/projects/minsk-crystal.png"
 								alt="Минск кристалл вековые традиции качества"
 							/>
-						</div>
-						<div class="swiper-slide swiper-clients__slide">
 							<img
-								class="swiper-clients__client"
-								src="@img/projects/commodity-exchange.png"
-								alt="Белорусская универсальная товарная биржа"
-							/>
-						</div>
-						<div class="swiper-slide swiper-clients__slide">
-							<img class="swiper-clients__client" src="@img/projects/bmz.png" alt="БМЗ" />
-						</div>
-						<div class="swiper-slide swiper-clients__slide">
-							<img
-								class="swiper-clients__client"
-								src="@img/projects/grodno-nitrogen.png"
-								alt="Гродно Азот"
+								class="swiper-clients__client swiper-clients__client--hidden"
+								src="@img/projects/minsk-crystal-min.png"
+								alt="Минск кристалл вековые традиции качества"
 							/>
 						</div>
 						<div class="swiper-slide swiper-clients__slide">
 							<img
 								class="swiper-clients__client"
-								src="@img/projects/belzarubezhstroy.png"
-								alt="Belzarubezhstroy"
+								src="@img/projects/minsk.png"
+								alt="Минск национальный аэропорт"
+							/>
+							<img
+								class="swiper-clients__client swiper-clients__client--hidden"
+								src="@img/projects/minsk-min.png"
+								alt="Минск национальный аэропорт"
 							/>
 						</div>
 						<div class="swiper-slide swiper-clients__slide">
 							<img
 								class="swiper-clients__client"
-								src="@img/projects/belzarubezhstroy.png"
-								alt="Belzarubezhstroy"
+								src="@img/projects/belkommunmash.png"
+								alt="Белкоммунмаш"
+							/>
+							<img
+								class="swiper-clients__client swiper-clients__client--hidden"
+								src="@img/projects/belkommunmash-min.png"
+								alt="Белкоммунмаш"
 							/>
 						</div>
 						<div class="swiper-slide swiper-clients__slide">
 							<img
 								class="swiper-clients__client"
-								src="@img/projects/belzarubezhstroy.png"
-								alt="Belzarubezhstroy"
+								src="@img/projects/minsk-crystal.png"
+								alt="Минск кристалл вековые традиции качества"
+							/>
+							<img
+								class="swiper-clients__client swiper-clients__client--hidden"
+								src="@img/projects/minsk-crystal-min.png"
+								alt="Минск кристалл вековые традиции качества"
 							/>
 						</div>
 						<div class="swiper-slide swiper-clients__slide">
 							<img
 								class="swiper-clients__client"
-								src="@img/projects/belzarubezhstroy.png"
-								alt="Belzarubezhstroy"
+								src="@img/projects/belkommunmash.png"
+								alt="Белкоммунмаш"
+							/>
+							<img
+								class="swiper-clients__client swiper-clients__client--hidden"
+								src="@img/projects/belkommunmash-min.png"
+								alt="Белкоммунмаш"
 							/>
 						</div>
 					</div>
