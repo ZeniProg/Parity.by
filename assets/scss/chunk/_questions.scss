@@ -16,7 +16,13 @@
 			font-weight: 700;
 			line-height: 109%;
 			background-color: var(--mystic-color);
+			transition: 0.3s;
 			cursor: pointer;
+
+			&:hover {
+				color: var(--gray-color);
+				background-color: var(--whisper-color);
+			}
 
 			&.active {
 				color: var(--gray-color);
