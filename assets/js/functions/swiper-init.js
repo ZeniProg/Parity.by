@@ -3,14 +3,29 @@ import Swiper from 'swiper/bundle';
 const swiper = new Swiper('.swiper-projects', {
 	speed: 600,
 	slidesPerView: 'auto',
-	slidesPerGroup: 4,
-	spaceBetween: 30,
+	slidesPerGroup: 1,
+	spaceBetween: 10,
 
 	pagination: {
 		el: '.swiper-projects__pagination',
 		clickable: true,
 		renderBullet: function (index, className) {
 			return '<button class="' + className + ' swiper-blue__bullet btn-reset"></button>';
+		},
+	},
+
+	breakpoints: {
+		1440: {
+			spaceBetween: 25,
+			slidesPerGroup: 4,
+		},
+		1024: {
+			spaceBetween: 25,
+			slidesPerGroup: 3,
+		},
+		768: {
+			spaceBetween: 25,
+			slidesPerGroup: 2,
 		},
 	},
 
@@ -21,11 +36,17 @@ const swiperClients = new Swiper('.swiper-clients', {
 	speed: 600,
 	loop: true,
 	slidesPerView: 'auto',
-	spaceBetween: 70,
+	spaceBetween: 20,
 
 	navigation: {
 		nextEl: '.swiper-clients-button-next',
 		prevEl: '.swiper-clients-button-prev',
+	},
+
+	breakpoints: {
+		768: {
+			spaceBetween: 70,
+		},
 	},
 
 	effect: 'slide',

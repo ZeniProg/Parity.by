@@ -8,21 +8,31 @@
 		max-width: 1530px;
 	}
 
+	&__content {
+		margin-bottom: 80px;
+
+		@media screen and (max-width: 768px) {
+			margin-bottom: 60px;
+		}
+	}
+
 	&__inner {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		margin-bottom: 80px;
+		margin-bottom: 130px;
+		gap: 30px;
+
+		@media screen and (max-width: 768px) {
+			flex-direction: column;
+			margin-bottom: 30px;
+			gap: 20px;
+		}
 	}
 
 	&__text {
 		margin: 0;
-		margin-right: 30px;
 		max-width: 750px;
 		font-weight: 325;
-
-		&:last-child {
-			margin-right: 0;
-		}
 	}
 }
