@@ -197,7 +197,6 @@
 
 	&__text {
 		position: relative;
-		max-width: 130px;
 		font-weight: 700;
 		font-size: 16px;
 		line-height: 81%;
@@ -214,10 +213,6 @@
 
 		&::before {
 			max-width: 255px;
-
-			@media screen and (max-height: 1024px) {
-				max-width: 235px;
-			}
 		}
 	}
 
