@@ -44,3 +44,4 @@ tabs(
 	'.questions-tabs__content-item',
 	'active',
 );
+tabs('.menu-tabs__header', '.menu-tabs__header-item', '.menu-tabs__content-item', 'active');
