@@ -1,25 +1,694 @@
 <header class="header">
 	<div class="header__container">
-		<a class="header__logo logo" href="#">
-			<img class="logo__img" src="@img/header/logo.png" alt="Logo">
+		<a class="header__logo logo">
+			<div class="logo__background"></div>
+			<img class="logo__img" src="@img/header/logo.png" alt="Логотип" />
 		</a>
-		<div class="header__menu menu">
-			<button class="menu__burger burger btn-reset">
-				<span class="burger__line"></span>
-			</button>
-			<nav class="menu__body">
-				<ul class="menu__list list-reset">
-					<li class="menu__item">
-						<a class="menu__link link-reset" href="#" data-goto=".section-1">Раздел #1</a>
-					</li>
-					<li class="menu__item">
-						<a class="menu__link link-reset" href="#" data-goto=".section-2">Раздел #2</a>
-					</li>
-					<li class="menu__item">
-						<a class="menu__link link-reset" href="#" data-goto=".section-3">Раздел #3</a>
-					</li>
-				</ul>
-			</nav>
+		<div class="header__inner">
+			<div class="header__messengers">
+				<div class="header__links">
+					<a class="header__messenger link-reset" href="mailto:mail@normtest.ru">
+						<svg class="header__icon">
+							<use href="@img/icons/sprite.svg#mail"></use>
+						</svg>
+						mail@normtest.ru
+					</a>
+					<a class="header__messenger link-reset" href="tel:+375291233322">
+						<svg class="header__icon">
+							<use href="@img/icons/sprite.svg#phone"></use>
+						</svg>
+						+375 (29) 123-33-22
+					</a>
+				</div>
+			</div>
+			<div class="header__menu menu">
+				<button class="menu__burger burger btn-reset">
+					<span class="burger__line"></span>
+				</button>
+				<nav class="menu__body">
+					<div class="menu__inner-link-phone">
+						<a class="menu__link-phone link-reset" href="#/">
+							<svg class="menu__icon">
+								<use href="@img/icons/sprite.svg#nav-phone"></use>
+							</svg>
+							Заказать звонок
+						</a>
+					</div>
+					<ul class="menu__list list-reset">
+						<li class="menu__item menu__item--has-triangle">
+							<a class="menu__link link-reset" href="#" data-goto=".section-1">Услуги </a>
+							<div class="menu__arrow"></div>
+							<div class="menu-tabs">
+								<div class="menu-tabs__header">
+									<div class="menu-tabs__header-item active">
+										<span class="menu-tabs__header-text">Таможенный союз</span>
+										<div class="menu-tabs__header-arrow"></div>
+									</div>
+									<div class="menu-tabs__header-item">
+										<span class="menu-tabs__header-text">Техническая документация</span>
+										<div class="menu-tabs__header-arrow"></div>
+									</div>
+									<div class="menu-tabs__header-item">
+										<span class="menu-tabs__header-text">Стандарты ISO</span>
+										<div class="menu-tabs__header-arrow"></div>
+									</div>
+									<div class="menu-tabs__header-item">
+										<span class="menu-tabs__header-text">Для строительных организаций</span>
+										<div class="menu-tabs__header-arrow"></div>
+									</div>
+									<div class="menu-tabs__header-item">
+										<span class="menu-tabs__header-text">Охрана труда</span>
+										<div class="menu-tabs__header-arrow"></div>
+									</div>
+									<div class="menu-tabs__header-item">
+										<span class="menu-tabs__header-text">Дополнительно</span>
+										<div class="menu-tabs__header-arrow"></div>
+									</div>
+								</div>
+								<div class="menu-tabs__content">
+									<div class="menu-tabs__content-item tab1">
+										<div class="menu-tabs__content-wrap">
+											<div class="menu-tabs__content-inner">
+												<h2 class="menu-tabs__content-title">Сертификация ТС</h2>
+												<ul class="menu-tabs__content-list list-reset">
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ТР ТС 004/2011 О безопасности низковольтного оборудования​</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															"ТР ТС 007/2011 О безопасности продукции, предназначенной для детей и
+															подростков"</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ТР ТС 008/2011 О безопасности игрушек</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ТР ТС 010/2011 О безопасности машин и оборудования</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ТР ТС 012/2011 О безопасности оборудования для работы во взрывоопасных
+															средах</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ТР ТС 016/2011 О безопасности аппаратов, работающих на газообразном
+															топливе</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															"ТР ТС 017/2011 О безопасности продукции легкой промышленности"</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ТР ТС 018/2011 О безопасности колесных транспортных средств</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ТР ТС 019/2011 О безопасности средств индивидуальной защиты</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ТР ТС 020/2011 Электромагнитная совместимость технических средств</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ТР ТС 025/2012 О безопасности мебельной продукции</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ТР ТС 031/2012 О безопасности сельскохозяйственных и лесохозяйственных
+															тракторов и прицепов к ним</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ТР ТС 032/2013 О безопасности оборудования, работающего под избыточным
+															давлением</a
+														>
+													</li>
+												</ul>
+											</div>
+											<div class="menu-tabs__content-inner">
+												<h2 class="menu-tabs__content-title">
+													Свидетельство о государственной регистрации (СГР)
+												</h2>
+												<ul class="menu-tabs__content-list list-reset">
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															Проведение лабораторных исследований</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/"
+															>Регистрация свидетельства</a
+														>
+													</li>
+												</ul>
+											</div>
+											<div class="menu-tabs__content-inner">
+												<h2 class="menu-tabs__content-title">Отказное письмо</h2>
+											</div>
+										</div>
+										<div class="menu-tabs__content-wrap">
+											<div class="menu-tabs__content-inner">
+												<h2 class="menu-tabs__content-title">Декларирование ТС</h2>
+												<ul class="menu-tabs__content-list list-reset">
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ТР ТС 004/2011 О безопасности низковольтного оборудования​​</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ТР ТС 005/2011 О безопасности упаковки</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															"ТР ТС 007/2011 О безопасности продукции, предназначенной для детей и
+															подростков"</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ТР ТС 009/2011 О безопасности парфюмерно-косметической продукции</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ТР ТС 010/2011 О безопасности машин и оборудования</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ТР ТС 015/2011 О безопасности зерна</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ТР ТС 016/2011 О безопасности аппаратов, работающих на газообразном
+															топливе</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ТР ТС 017/2011 О безопасности продукции легкой промышленности</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ТР ТС 018/2011 О безопасности колесных транспортных средств</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ТР ТС 019/2011 О безопасности средств индивидуальной защиты</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ТР ТС 020/2011 Электромагнитная совместимость технических средств</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ТР ТС 021/2011 О безопасности пищевой продукции</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ТР ТС 022/2011 Пищевая продукция в части ее маркировки</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															"ТР ТС 023/2011 Технический регламент на соковую продукцию из фруктов
+															и овощей"</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ТР ТС 024/2011 Технический регламент на масложировую продукцию</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ТР ТС 025/2012 О безопасности мебельной продукции</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															"ТР ТС 027/2012 О безопасности отдельных видов специализированной
+															пищевой продукции, в том числе диетического лечебного и диетического
+															профилактического питания"</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															"ТР ТС 029/2012 Требования к безопасности пищевых добавок,
+															ароматизаторов и технологических вспомогательных средств"</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ТР ТС 030/2012 О требованиях к смазочным материалам, маслам и
+															специальным жидкостям</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ТР ТС 032/2013 О безопасности оборудования, работающего под избыточным
+															давлением</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ТР ТС 033/2013 О безопасности молока и молочной продукции</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ТР ТС 034/2013 О безопасности мяса и мясной продукции</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ТР ЕАЭС 037/2016 Об ограничении применения опасных веществ в изделиях
+															электротехники и радиоэлектроники</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ТР ЕАЭС 040/2016 О безопасности рыбы и рыбной продукции</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ТР ЕАЭС 047/2018 О безопасности алкогольной продукции</a
+														>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="menu-tabs__content-wrap">
+											<div class="menu-tabs__content-inner">
+												<h2 class="menu-tabs__content-title">Испытания продукции в рамках ТР</h2>
+												<ul class="menu-tabs__content-list list-reset">
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ТР ТС 004/2011 О безопасности низковольтного оборудования​​</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ТР ТС 005/2011 О безопасности упаковки</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															"ТР ТС 007/2011 О безопасности продукции, предназначенной для детей и
+															подростков"</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ТР ТС 009/2011 О безопасности парфюмерно-косметической продукции</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ТР ТС 010/2011 О безопасности машин и оборудования</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ТР ТС 015/2011 О безопасности зерна</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ТР ТС 016/2011 О безопасности аппаратов, работающих на газообразном
+															топливе</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ТР ТС 017/2011 О безопасности продукции легкой промышленности</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ТР ТС 018/2011 О безопасности колесных транспортных средств</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ТР ТС 019/2011 О безопасности средств индивидуальной защиты</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ТР ТС 020/2011 Электромагнитная совместимость технических средств</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ТР ТС 021/2011 О безопасности пищевой продукции</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ТР ТС 022/2011 Пищевая продукция в части ее маркировки</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															"ТР ТС 023/2011 Технический регламент на соковую продукцию из фруктов
+															и овощей"</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ТР ТС 024/2011 Технический регламент на масложировую продукцию</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ТР ТС 025/2012 О безопасности мебельной продукции</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															"ТР ТС 027/2012 О безопасности отдельных видов специализированной
+															пищевой продукции, в том числе диетического лечебного и диетического
+															профилактического питания"</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															"ТР ТС 029/2012 Требования к безопасности пищевых добавок,
+															ароматизаторов и технологических вспомогательных средств"</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ТР ТС 030/2012 О требованиях к смазочным материалам, маслам и
+															специальным жидкостям</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ТР ТС 032/2013 О безопасности оборудования, работающего под избыточным
+															давлением</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ТР ТС 033/2013 О безопасности молока и молочной продукции</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ТР ТС 034/2013 О безопасности мяса и мясной продукции</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ТР ЕАЭС 037/2016 Об ограничении применения опасных веществ в изделиях
+															электротехники и радиоэлектроники</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ТР ЕАЭС 040/2016 О безопасности рыбы и рыбной продукции</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ТР ЕАЭС 047/2018 О безопасности алкогольной продукции</a
+														>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="menu-tabs__content-item tab2">
+										<div class="menu-tabs__content-wrap">
+											<div class="menu-tabs__content-inner">
+												<h2 class="menu-tabs__content-title">Оборудование</h2>
+												<ul class="menu-tabs__content-list list-reset">
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/"
+															>Руководство по эксплуатации</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/"
+															>Паспорт изделия</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/"
+															>Технические условия</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/"
+															>Обоснование безопасности</a
+														>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="menu-tabs__content-wrap">
+											<div class="menu-tabs__content-inner">
+												<h2 class="menu-tabs__content-title">Пищевая продукция</h2>
+												<ul class="menu-tabs__content-list list-reset">
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/"
+															>Технические условия</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/"
+															>Технологические иструкции</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/"
+															>Санитарные инструкции</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/"
+															>Рецептуры</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															Программа производственного контроля</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															Разработка технико-технологической карты</a
+														>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="menu-tabs__content-wrap">
+											<div class="menu-tabs__content-inner">
+												<h2 class="menu-tabs__content-title">Химическая продукция</h2>
+												<ul class="menu-tabs__content-list list-reset">
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															Разработка паспорта безопасности вещества</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															Паспорт безопасности химической продукции (MSDS)</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															Паспорт качества</a
+														>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="menu-tabs__content-item tab3">
+										<div class="menu-tabs__content-wrap">
+											<div class="menu-tabs__content-inner">
+												<h2 class="menu-tabs__content-title">Сертификация по стандартам ISO</h2>
+												<ul class="menu-tabs__content-list list-reset">
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ISO 9001 Система менеджмента качсетва</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ISO 45001 Система менеджмента безопасности труда и охраны здоровья</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ISO 14001 Система экологического менеджмента</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ISO 22000 Система менеджмента безопасности пищевой продукции</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															СТБ 1470 Система менеджмента безопасности пищевой продукции</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ISO/IEC 20000 Управление IT-сервисами</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															SO/IEC 27001 Система менеджмента информационной безопасности</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															FSSC 22000 Пищевая безопасность, цепочка производства и поставок</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ISO 28000 Безопасность цепей поставок</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ISO 37001 Борьба со взяточничеством</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ISO 13485 Для производителей медицинских изделий</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ISO 16949 Автомобильная промышленность</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ISO 17100 Переводческие услуги</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ISO 21001 Система менеджмента повышения компетентности</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ISO 22301 Система менеджмента непрерывности бизнеса</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ISO/IEC 17025 Испытательные и колибровочные лаборатории</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/">
+															ISO 26000 Социальная ответственность</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/"
+															>ISO 31000 Менеджмент рисков</a
+														>
+													</li>
+													<li class="menu-tabs__content-list-item">
+														<a class="menu-tabs__content-list-link link-reset" href="#/"
+															>ISO 50001 Энергоменеджмент</a
+														>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="menu-tabs__content-wrap">
+											<div class="menu-tabs__content-inner">
+												<h2 class="menu-tabs__content-title">
+													Разработка документов для сертификации по стандартам ISO
+												</h2>
+												<ul class="menu-tabs__content-list list-reset"></ul>
+											</div>
+										</div>
+										<div class="menu-tabs__content-wrap">
+											<div class="menu-tabs__content-inner">
+												<h2 class="menu-tabs__content-title">
+													Проведение обучения по стандартам ISO
+												</h2>
+												<ul class="menu-tabs__content-list list-reset"></ul>
+											</div>
+										</div>
+									</div>
+									<div class="menu-tabs__content-item tab4">
+										<div class="menu-tabs__content-inner"></div>
+									</div>
+									<div class="menu-tabs__content-item">
+										<div class="menu-tabs__content-inner"></div>
+									</div>
+									<div class="menu-tabs__content-item">
+										<div class="menu-tabs__content-inner"></div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link link-reset" href="#" data-goto=".section-2"
+								>Полезная информация</a
+							>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link link-reset" href="#" data-goto=".section-3">О компании</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link link-reset" href="#" data-goto=".section-2">Контакты</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link link-reset" href="#" data-goto=".section-3">Портфолио</a>
+						</li>
+					</ul>
+					<button class="menu__search btn-reset">
+						<svg class="menu__search-icon">
+							<use href="@img/icons/sprite.svg#magnifier"></use>
+						</svg>
+					</button>
+				</nav>
+			</div>
 		</div>
 	</div>
 </header>
