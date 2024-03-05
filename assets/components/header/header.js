@@ -1,9 +1,11 @@
 // Меню бургер
+const menuInnerBurger = document.querySelector('.menu__inner-burger');
 const menuBurger = document.querySelector('.menu__burger');
 const menuBody = document.querySelector('.menu__body');
-if (menuBurger) {
-	menuBurger.addEventListener('click', function (e) {
+if (menuInnerBurger) {
+	menuInnerBurger.addEventListener('click', function (e) {
 		document.body.classList.toggle('lock');
+		menuInnerBurger.classList.toggle('active');
 		menuBurger.classList.toggle('active');
 		menuBody.classList.toggle('active');
 	});
@@ -25,8 +27,9 @@ if (menuLinks.length > 0) {
 				pageYOffset -
 				document.querySelector('header').offsetHeight;
 
-			if (menuBurger.classList.contains('active')) {
+			if (menuInnerBurger.classList.contains('active')) {
 				document.body.classList.remove('lock');
+				menuInnerBurger.classList.remove('active');
 				menuBurger.classList.remove('active');
 				menuBody.classList.remove('active');
 			}
