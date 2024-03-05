@@ -240,7 +240,7 @@
 }
 
 .swiper {
-	width: 1510px;
+	width: 1530px;
 
 	@media screen and (min-width: 1440px) and (max-width: 1530px) {
 		width: 1420px;
@@ -293,7 +293,7 @@
 
 	&__pagination {
 		position: relative;
-		top: 9% !important;
+		top: 6% !important;
 		display: flex;
 		justify-content: flex-end;
 		gap: 20px;
@@ -404,19 +404,72 @@
 	align-items: center;
 	width: 1260px;
 	height: 85px;
+
+	@media screen and (max-width: 1440px) {
+		width: 900px;
+		height: 105px;
+	}
+
+	@media screen and (max-width: 1199.98px) {
+		width: 730px;
+	}
+
+	@media screen and (max-width: 991.98px) {
+		width: 470px;
+		height: 160px;
+	}
+
+	@media screen and (max-width: 767.98px) {
+		flex-direction: column;
+		align-items: flex-end;
+		width: 300px;
+		height: 260px;
+	}
 }
 
 .swiper-texts {
 	width: 1135px;
 	height: 65px;
 
+	@media screen and (max-width: 1440px) {
+		width: 775px;
+		height: 90px;
+	}
+
+	@media screen and (max-width: 1199.98px) {
+		width: 605px;
+	}
+
+	@media screen and (max-width: 991.98px) {
+		width: 345px;
+		height: 160px;
+	}
+
+	@media screen and (max-width: 767.98px) {
+		margin-bottom: 20px;
+		width: 300px;
+	}
+
 	&__text {
+		@include adaptive-font(18, 14);
 		overflow-y: auto;
 		margin: 0;
-		height: auto;
 		height: 65px;
-		font-weight: 350;
-		line-height: 120%;
+		font-size: 14px;
+		line-height: 122%;
+
+		@media screen and (min-width: 1560px) {
+			font-size: 18;
+		}
+
+		@media screen and (max-width: 1440px) {
+			height: 90px;
+		}
+
+		@media screen and (max-width: 991.98px) {
+			height: 160px;
+			line-height: 113%;
+		}
 	}
 
 	&__arrows {
@@ -437,6 +490,10 @@
 
 .swiper-articles {
 	height: 235px;
+
+	&__pagination {
+		top: 9% !important;
+	}
 }
 
 .card {

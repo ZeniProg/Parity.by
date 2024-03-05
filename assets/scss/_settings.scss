@@ -40,6 +40,10 @@ body {
 	margin: 0 auto;
 	padding: 0 15px;
 	max-width: $container-width + px;
+
+	@media screen and (max-width: 768px) {
+		padding: 0 10px;
+	}
 }
 
 img {
