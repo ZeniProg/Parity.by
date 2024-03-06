@@ -243,11 +243,11 @@
 	width: 1530px;
 
 	@media screen and (min-width: 1440px) and (max-width: 1559.98px) {
-		width: 1420px;
+		width: 1410px;
 	}
 
 	@media screen and (min-width: 1024px) and (max-width: 1439.98px) {
-		width: 1005px;
+		width: 995px;
 	}
 
 	@media screen and (min-width: 768px) and (max-width: 1023.98px) {
@@ -282,7 +282,7 @@
 	&__slide-inner {
 		width: 335px;
 
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 767.98px) {
 			width: 285px;
 		}
 
@@ -343,15 +343,15 @@
 	}
 
 	&__client {
-		&--hidden {
-			display: none;
-
-			@media screen and (max-width: 768px) {
-				display: inline-block;
-			}
-		}
 		@media screen and (max-width: 768px) {
 			display: none;
+		}
+	}
+	&__client--hidden {
+		display: none;
+
+		@media screen and (max-width: 768px) {
+			display: inline-block;
 		}
 	}
 
@@ -520,7 +520,7 @@
 		line-height: 89%;
 		color: var(--gray-color);
 
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 767.98px) {
 			margin-bottom: 10px;
 		}
 	}
@@ -540,7 +540,7 @@
 			font-size: 28px;
 		}
 
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 767.98px) {
 			height: 171px;
 		}
 	}
@@ -607,7 +607,7 @@
 		background-color: var(--whisper-color);
 	}
 
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 767.98px) {
 		padding: 20px 20px 30px;
 		min-height: 240px;
 		max-width: 240px;
