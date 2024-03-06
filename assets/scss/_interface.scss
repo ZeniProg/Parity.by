@@ -768,3 +768,57 @@
 		}
 	}
 }
+
+.questions-spollers {
+	&__item {
+		margin-bottom: 10px;
+		background-color: var(--light-color) !important;
+	}
+
+	&__title {
+		font-size: 20px !important;
+		padding: 15px !important;
+		font-weight: 700 !important;
+		line-height: 109% !important;
+		color: var(--dark-color) !important;
+		background-color: var(--mystic-color);
+		text-align: left !important;
+
+		&:hover {
+			color: var(--gray-color) !important;
+			background-color: var(--whisper-color);
+		}
+
+		&.active {
+			color: var(--gray-color) !important;
+			background-color: var(--whisper-color);
+		}
+
+		&::after {
+			display: none;
+		}
+
+		@media screen and (max-width: 768px) {
+			font-size: 18px !important;
+		}
+
+		@media screen and (max-width: 425px) {
+			font-size: 16px !important;
+		}
+	}
+
+	&__text {
+		padding: 10px 0 0 0 !important;
+		max-height: 100% !important;
+
+		&::before {
+			display: none;
+		}
+	}
+
+	&__content {
+		margin: 0;
+		margin-bottom: 10px;
+		line-height: 122%;
+	}
+}
