@@ -37,14 +37,6 @@
 			background-color: rgb(48 53 68 / 67%);
 		}
 
-		&--hidden {
-			display: none;
-
-			@media screen and (max-width: 768px) {
-				display: inline-block;
-			}
-		}
-
 		@media screen and (max-width: 1250px) {
 			width: 1560px;
 		}
@@ -66,6 +58,14 @@
 		@media screen and (max-width: 425px) {
 			width: 455px;
 			height: 430px;
+		}
+	}
+
+	&__background--hidden {
+		display: none;
+
+		@media screen and (max-width: 768px) {
+			display: inline-block;
 		}
 	}
 
