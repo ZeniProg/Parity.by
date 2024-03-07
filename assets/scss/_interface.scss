@@ -596,9 +596,13 @@
 	}
 
 	&__date {
+		@include adaptive-font(16, 12);
 		max-width: 210px;
-		font-size: 16px;
 		line-height: 100%;
+
+		@media screen and (min-width: 1560px) {
+			font-size: 16px;
+		}
 	}
 
 	&__arrow-inner {
@@ -669,13 +673,37 @@
 	gap: 30px;
 	width: 100%;
 
+	@media screen and (max-width: 1539.98px) {
+		justify-content: space-around;
+	}
+
+	@media screen and (max-width: 576px) {
+		justify-content: flex-start;
+		gap: 10px;
+	}
+
 	&__card {
 		max-width: 355px;
 		min-height: 250px;
+
+		@media screen and (max-width: 992px) {
+			max-width: 305px;
+		}
+
+		@media screen and (max-width: 425px) {
+			max-width: 260px;
+			min-height: 155px;
+		}
 	}
 
 	&__title {
+		@include adaptive-font(28, 18);
 		height: 110px;
+		line-height: 109%;
+
+		@media screen and (max-width: 425px) {
+			height: 60px;
+		}
 	}
 }
 
@@ -904,22 +932,34 @@
 	}
 
 	&__input {
+		@include adaptive-font(18, 12);
 		width: 100%;
 		padding: 18px 70px 18px 30px;
 		font-weight: 400;
-		font-size: 18px;
 		line-height: 133%;
 		border: none;
 		background-color: var(--concrete-color);
 
 		&::placeholder {
+			@include adaptive-font(18, 12);
 			font-weight: 400;
-			font-size: 18px;
 			line-height: 133%;
 		}
 
 		&:focus {
 			outline: none;
+		}
+
+		@media screen and (min-width: 1560px) {
+			font-size: 18px;
+
+			&::placeholder {
+				font-size: 18px;
+			}
+		}
+
+		@media screen and (max-width: 576px) {
+			padding: 15px 50px 14px 10px;
 		}
 	}
 
@@ -941,6 +981,23 @@
 			height: 55px;
 			top: 3px;
 			left: 3px;
+		}
+
+		@media screen and (max-width: 576px) {
+			padding: 10px 15px 10px 20px;
+			width: 50px;
+			height: 45px;
+
+			&::after,
+			&::before {
+				width: 50px;
+				height: 45px;
+			}
+
+			&::before {
+				width: 45px;
+				height: 40px;
+			}
 		}
 	}
 }

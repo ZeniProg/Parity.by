@@ -7,9 +7,17 @@
 
 	&__content {
 		margin-bottom: 80px;
+
+		@media screen and (max-width: 576px) {
+			margin-bottom: 25px;
+		}
 	}
 
 	&__form {
 		margin-bottom: 60px;
+
+		@media screen and (max-width: 576px) {
+			margin-bottom: 30px;
+		}
 	}
 }
