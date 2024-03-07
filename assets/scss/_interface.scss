@@ -14,6 +14,7 @@
 	padding-top: 85px;
 	padding-left: 130px;
 	max-width: 1060px;
+	min-height: 415px;
 
 	&__background {
 		position: absolute;
@@ -660,6 +661,24 @@
 	}
 }
 
+.services-cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	gap: 30px;
+	width: 100%;
+
+	&__card {
+		max-width: 355px;
+		min-height: 250px;
+	}
+
+	&__title {
+		height: 110px;
+	}
+}
+
 .btn {
 	position: relative;
 	display: flex;
@@ -865,6 +884,109 @@
 
 		@media screen and (max-width: 1560px) {
 			font-size: 16px;
+		}
+	}
+}
+
+.search-btn {
+	padding: 10px 15px 10px 25px;
+	width: 60px;
+	height: 40px;
+	line-height: 0;
+	clip-path: polygon(20% 0, 100% 0, 100% 99%, 0% 100%);
+	position: relative;
+
+	&:hover .search-btn__icon {
+		fill: var(--dark-color);
+	}
+
+	&:hover {
+		&::after {
+			background-color: var(--dark-color);
+		}
+	}
+
+	&::after,
+	&::before {
+		position: absolute;
+		content: '';
+		width: 60px;
+		height: 40px;
+		top: 0;
+		left: 0;
+		background-color: var(--blue-color);
+		clip-path: polygon(20% 0, 100% 0, 100% 99%, 0% 100%);
+		z-index: -1;
+		transition: background-color 0.4s;
+	}
+
+	&::before {
+		width: 56px;
+		height: 36px;
+		top: 2px;
+		left: 2px;
+		background-color: var(--light-color);
+		z-index: 0;
+	}
+
+	&__icon {
+		width: 17px;
+		height: 17px;
+		fill: var(--blue-color);
+		transition: fill 0.4s;
+		position: relative;
+		z-index: 2;
+	}
+}
+
+.search {
+	display: flex;
+	align-items: center;
+	position: relative;
+	width: 100%;
+
+	&__label {
+		width: 100%;
+	}
+
+	&__input {
+		width: 100%;
+		padding: 18px 70px 18px 30px;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 133%;
+		border: none;
+		background-color: var(--concrete-color);
+
+		&::placeholder {
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 133%;
+		}
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	&__btn {
+		width: 70px;
+		height: 60px;
+		position: absolute;
+		top: 0;
+		right: 0;
+
+		&::after,
+		&::before {
+			width: 70px;
+			height: 60px;
+		}
+
+		&::before {
+			width: 65px;
+			height: 55px;
+			top: 3px;
+			left: 3px;
 		}
 	}
 }
