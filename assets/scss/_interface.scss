@@ -539,6 +539,59 @@
 	}
 }
 
+.certification-goals-slider-wrap {
+	width: 100vw;
+	height: 410px;
+	position: relative;
+}
+
+.swiper-images {
+	position: absolute !important;
+	top: 0;
+	left: calc(-50% - 22px);
+	width: 3090px;
+	.swiper-wrapper {
+		align-items: center;
+	}
+
+	&__inner {
+		width: 230px;
+		height: 125px;
+		background-color: var(--light-color);
+	}
+
+	&__img {
+		width: 100%;
+		height: auto;
+		opacity: 0.5;
+	}
+
+	.swiper-slide-active {
+		.swiper-images__inner {
+			width: 750px;
+			height: 410px;
+			position: relative;
+
+			&::after {
+				position: absolute;
+				content: '';
+				width: 800px;
+				height: 400px;
+				background-color: var(--blue-color);
+				clip-path: polygon(0 0, 100% 0, 92% 100%, 0% 100%);
+				top: 10px;
+				left: 24px;
+			}
+		}
+
+		.swiper-images__img {
+			position: relative;
+			z-index: 1;
+			opacity: 1;
+		}
+	}
+}
+
 .card {
 	display: flex;
 	flex-direction: column;
@@ -1029,6 +1082,7 @@
 		font-weight: 700;
 		font-size: 16px;
 		line-height: 87%;
+		text-transform: uppercase;
 		cursor: pointer;
 		user-select: none;
 		position: relative;

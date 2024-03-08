@@ -41,9 +41,11 @@ function tabs(headerSelector, tabSelector, contentSelector, activeClass, display
 
 tabs('.menu-tabs__header', '.menu-tabs__header-item', '.menu-tabs__content-item', 'active');
 
-tabs(
-	'.questions-tabs__header',
-	'.questions-tabs__header-item',
-	'.questions-tabs__content-item',
-	'active',
-);
+if (location.pathname === '/index.html') {
+	tabs(
+		'.questions-tabs__header',
+		'.questions-tabs__header-item',
+		'.questions-tabs__content-item',
+		'active',
+	);
+}

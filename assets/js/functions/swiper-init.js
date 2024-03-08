@@ -92,3 +92,14 @@ const swiperArticles = new Swiper('.swiper-articles', {
 
 	effect: 'slide',
 });
+
+const swiperImages = new Swiper('.swiper-images', {
+	speed: 600,
+	slidesPerView: 'auto',
+	slidesPerGroup: 1,
+	spaceBetween: 30,
+	centeredSlides: true,
+	loop: true,
+
+	effect: 'slide',
+});

@@ -153,5 +153,7 @@ class ItcCustomSelect {
 	}
 }
 
-const select1 = new ItcCustomSelect('#select-1');
-const select2 = new ItcCustomSelect('#select-2');
+if (location.pathname === '/news-section.html') {
+	const select1 = new ItcCustomSelect('#select-1');
+	const select2 = new ItcCustomSelect('#select-2');
+}
