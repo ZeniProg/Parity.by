@@ -1,0 +1,150 @@
+.footer {
+	background-color: var(--dark-color);
+	&__wrap {
+		display: flex;
+		justify-content: flex-start;
+	}
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: space-between;
+		margin-right: 60px;
+		padding: 55px 0 25px 0;
+		width: 100%;
+		max-width: 330px;
+		min-height: 505px;
+		position: relative;
+		z-index: 1;
+
+		&::after {
+			position: absolute;
+			content: '';
+			top: -8px;
+			right: -30px;
+			width: 875px;
+			height: 515px;
+			background-color: var(--blue-color);
+			z-index: -1;
+		}
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	&__logo {
+		margin-bottom: 80px;
+		width: 220px;
+		height: 75px;
+	}
+
+	&__mail {
+		@include adaptive-font(14, 12);
+		display: flex;
+		align-items: center;
+		margin-bottom: 20px;
+		font-weight: 600;
+		line-height: 107%;
+		color: var(--fiord-color);
+		transition: color 0.4s;
+
+		&:hover {
+			color: var(--light-color);
+		}
+
+		&:hover .footer__icon {
+			fill: var(--light-color);
+		}
+
+		@media screen and (max-width: 1560px) {
+			font-size: 14px;
+		}
+	}
+
+	&__address {
+		@include adaptive-font(14, 12);
+		display: flex;
+		justify-content: flex-start;
+		margin-bottom: 20px;
+		max-width: 230px;
+		font-weight: 600;
+		line-height: 107%;
+		color: var(--fiord-color);
+
+		&-text {
+			max-width: 205px;
+		}
+
+		@media screen and (max-width: 1560px) {
+			font-size: 14px;
+		}
+	}
+
+	&__icon {
+		margin-right: 10px;
+		width: 16px;
+		height: 16px;
+		fill: var(--dark-color);
+		transition: fill 0.4s;
+	}
+
+	&__text {
+		@include adaptive-font(14, 12);
+		margin: 0;
+		max-width: 185px;
+		font-weight: 600;
+		line-height: 129%;
+		color: var(--black-color);
+
+		@media screen and (max-width: 1560px) {
+			font-size: 14px;
+		}
+	}
+
+	&__authorship {
+		@include adaptive-font(12, 10);
+		margin: 0;
+		font-weight: 600;
+		line-height: 108%;
+
+		@media screen and (max-width: 1560px) {
+			font-size: 12px;
+		}
+	}
+
+	&__links {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		margin-right: 30px;
+		padding-top: 95px;
+		max-width: 360px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	&__item {
+		margin-bottom: 20px;
+		font-size: 16px;
+		line-height: 100%;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__link {
+		color: var(--light-color);
+		transition: color 0.4s;
+
+		&:hover {
+			color: var(--blue-color);
+		}
+	}
+}
