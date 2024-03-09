@@ -6,9 +6,9 @@
 	}
 
 	&__title {
+		clip-path: polygon(0 0, 100% 15%, 90% 100%, 0 85%);
 		margin-bottom: 20px;
 		padding: 25px 50px 30px 30px;
-		clip-path: polygon(0 0, 100% 15%, 90% 100%, 0 85%);
 
 		@media (min-width: 1560px) {
 			font-size: 40px;

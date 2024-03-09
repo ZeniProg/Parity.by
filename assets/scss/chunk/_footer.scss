@@ -1,5 +1,6 @@
 .footer {
 	background-color: var(--dark-color);
+
 	&__wrap {
 		display: flex;
 		justify-content: flex-start;
@@ -11,27 +12,27 @@
 	}
 
 	&__inner {
+		position: relative;
+		z-index: 1;
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
 		justify-content: space-between;
 		margin-right: 60px;
-		padding: 55px 0 25px 0;
+		padding: 55px 0 25px;
 		width: 100%;
-		max-width: 330px;
 		min-height: 505px;
-		position: relative;
-		z-index: 1;
+		max-width: 330px;
 
 		&::after {
-			position: absolute;
 			content: '';
-			top: -8px;
+			position: absolute;
 			right: -30px;
+			top: -8px;
+			z-index: -1;
 			width: 875px;
 			height: 515px;
 			background-color: var(--blue-color);
-			z-index: -1;
 		}
 
 		@media screen and (max-width: 992px) {
@@ -40,12 +41,12 @@
 
 		@media screen and (max-width: 768px) {
 			margin-right: 0;
-			padding: 30px 0 20px 0;
+			padding: 30px 0 20px;
 			min-height: 350px;
 
 			&::after {
-				top: 0;
 				right: -200%;
+				top: 0;
 			}
 		}
 	}
@@ -74,6 +75,14 @@
 	&__img {
 		width: 100%;
 		height: auto;
+	}
+
+	&__icon {
+		margin-right: 10px;
+		width: 16px;
+		height: 16px;
+		fill: var(--dark-color);
+		transition: fill 0.4s;
 	}
 
 	&__mail {
@@ -110,8 +119,8 @@
 		margin-bottom: 20px;
 		max-width: 230px;
 		font-weight: 600;
-		line-height: 107%;
 		font-style: normal;
+		line-height: 107%;
 		color: var(--fiord-color);
 
 		&-text {
@@ -125,14 +134,6 @@
 		@media screen and (max-width: 768px) {
 			margin-bottom: 30px;
 		}
-	}
-
-	&__icon {
-		margin-right: 10px;
-		width: 16px;
-		height: 16px;
-		fill: var(--dark-color);
-		transition: fill 0.4s;
 	}
 
 	&__text {
@@ -181,8 +182,8 @@
 		}
 
 		@media screen and (max-width: 576px) {
-			margin-bottom: 50px;
 			margin-right: 0;
+			margin-bottom: 50px;
 
 			&:last-child {
 				margin-bottom: 0;
@@ -220,10 +221,10 @@
 	&__inner-links {
 		display: flex;
 		align-items: flex-start;
+		overflow-y: auto;
 		padding-top: 95px;
 		padding-bottom: 25px;
 		height: 505px;
-		overflow-y: auto;
 
 		@media screen and (max-width: 768px) {
 			display: none;

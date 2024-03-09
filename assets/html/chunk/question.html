@@ -1,0 +1,43 @@
+<section class="question section">
+	<div class="container">
+		<h2 class="question__title big-title big-title--color-blue">Не нашли интересующий вопрос, <br><span
+				class="question__title question__title--flex  big-title">задайте
+				его нам сами
+				<div class="big-title__arrow"></div>
+			</span>
+		</h2>
+		<form class="question__form form" action="#/">
+			<label for="question">
+				<textarea class="form__input form__input--size" rows="10" cols="100" id="question" placeholder="Ваш текст"
+					required></textarea>
+			</label>
+			<div class="form__row">
+				<label for="telephone">
+					<input class="form__input" id="telephone" type="tel" placeholder="Номер телефона" required>
+				</label>
+				<label for="email">
+					<input class="form__input" id="email" type="email" placeholder="Электронная почта" required>
+				</label>
+			</div>
+			<div class="form__wrap">
+				<label class="form__input-attach" for="attach">
+					<input class="form__input-attach--display" id="attach" type="file">
+					<svg class="form__icon">
+						<use class="form__icon-item" href="img/icons/sprite.svg#question-input-attach"></use>
+					</svg>
+				</label>
+				<div class="form__inner form-inner">
+					<button class="form__btn btn btn--white btn-reset" href="#/">
+						<span class="btn__text">Отправить</span>
+						<svg class="btn__icon">
+							<use href="img/icons/sprite.svg#btn-arrow-white"></use>
+						</svg>
+					</button>
+					<p class="form__text">
+						Нажимая на кнопку, я даю согласие на обработку персональных данных.
+					</p>
+				</div>
+			</div>
+		</form>
+	</div>
+</section>
