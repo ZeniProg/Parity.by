@@ -1416,3 +1416,66 @@
 		clip-path: polygon(0 0, 100% 0, 91% 100%, 0% 100%);
 	}
 }
+
+.functional {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 30px;
+
+	&__coincidences {
+		@include adaptive-font(18, 12);
+		margin-right: 65px;
+
+		@media screen and (min-width: 1560px) {
+			font-size: 18px;
+		}
+	}
+
+	&__inner {
+		display: flex;
+		align-items: center;
+		@include adaptive-font(18, 12);
+
+		@media screen and (min-width: 1560px) {
+			font-size: 18px;
+		}
+	}
+
+	&__text {
+		@include adaptive-font(18, 12);
+		margin-right: 10px;
+
+		@media screen and (min-width: 1560px) {
+			font-size: 18px;
+		}
+	}
+
+	&__coincidences--blue-color {
+		font-weight: 900;
+		color: var(--blue-color);
+	}
+
+	&__btn {
+		@include adaptive-font(18, 12);
+		margin-right: 15px;
+		font-weight: 900;
+		transition: color 0.4s;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&:hover {
+			color: var(--blue-haze-color);
+		}
+
+		&.active {
+			color: var(--blue-haze-color);
+		}
+
+		@media screen and (min-width: 1560px) {
+			font-size: 18px;
+		}
+	}
+}
