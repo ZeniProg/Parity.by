@@ -1,12 +1,17 @@
 .questions-tabs {
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: space-between;
+
+	@media screen and (max-width: 991.98px) {
+		display: none;
+	}
 
 	&__header {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
+		margin-right: 30px;
 		max-width: 750px;
 		gap: 20px;
 

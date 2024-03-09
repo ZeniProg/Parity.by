@@ -1,0 +1,23 @@
+.certification-goals {
+	gap: 100px;
+
+	&__wrap {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	&__texts {
+		margin-bottom: 100px;
+	}
+
+	&__text {
+		margin: 0;
+		margin-bottom: 30px;
+		max-width: 1010px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}

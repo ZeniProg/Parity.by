@@ -38,10 +38,14 @@ function tabs(headerSelector, tabSelector, contentSelector, activeClass, display
 // ВТОРОЙ аргумент - класс конкретного элемента, при клике на который будет переключатся таб.
 // ТРЕТИЙ аргумент - класс того блока, который будет переключаться.
 // ЧЕТВЕРТЫЙ аргумент - класс активности, который будет добавлятся для таба, который сейчас активен.
-tabs(
-	'.questions-tabs__header',
-	'.questions-tabs__header-item',
-	'.questions-tabs__content-item',
-	'active',
-);
+
 tabs('.menu-tabs__header', '.menu-tabs__header-item', '.menu-tabs__content-item', 'active');
+
+if (location.pathname === '/index.html' || location.pathname === '/') {
+	tabs(
+		'.questions-tabs__header',
+		'.questions-tabs__header-item',
+		'.questions-tabs__content-item',
+		'active',
+	);
+}
