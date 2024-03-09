@@ -1,0 +1,34 @@
+.portfolio-projects {
+	&__wrap {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	&__title {
+		clip-path: polygon(0 0, 100% 15%, 90% 100%, 0 85%);
+		margin-bottom: 20px;
+		padding: 25px 50px 30px 30px;
+
+		@media (min-width: 1560px) {
+			font-size: 40px;
+		}
+
+		@media (max-width: 660px) {
+			margin-bottom: 10px;
+		}
+
+		@media (max-width: 450px) {
+			padding: 25px 50px 35px 30px;
+		}
+
+		@media (max-width: 390px) {
+			padding: 25px 25px 30px 10px;
+		}
+
+		@media (max-width: 350px) {
+			clip-path: polygon(0 0, 100% 15%, 90% 100%, 0 95%);
+			padding: 25px 35px 25px 10px;
+		}
+	}
+}
