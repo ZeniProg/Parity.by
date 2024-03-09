@@ -13,12 +13,16 @@
 		gap: 25px;
 	}
 
-	&__slider-wrap {
-		margin-bottom: 35px;
-	}
-
 	&__texts-slider-wrap {
 		margin-bottom: 80px;
+
+		@media screen and (max-width: 767.98px) {
+			margin-bottom: 30px;
+		}
+	}
+
+	&__slider-wrap {
+		margin-bottom: 35px;
 	}
 }
 

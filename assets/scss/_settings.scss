@@ -20,11 +20,7 @@ body {
 	color: var(--dark-color);
 	background-color: var(--light-color);
 
-	&.lock {
-		overflow: hidden;
-	}
-
-	@media screen and (min-width: 1530px) {
+	@media screen and (min-width: 1560px) {
 		font-size: 18px;
 	}
 }
@@ -44,6 +40,10 @@ body {
 	margin: 0 auto;
 	padding: 0 15px;
 	max-width: $container-width + px;
+
+	@media screen and (max-width: 768px) {
+		padding: 0 10px;
+	}
 }
 
 img {
