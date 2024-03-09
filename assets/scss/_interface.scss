@@ -488,6 +488,10 @@
 	width: 1530px;
 	height: 275px;
 
+	&--higher {
+		height: 540px;
+	}
+
 	@media screen and (min-width: 1440px) and (max-width: 1559.98px) {
 		width: 1410px;
 	}
@@ -514,6 +518,10 @@
 .swiper-articles {
 	height: 235px;
 
+	&--higher {
+		height: 495px;
+	}
+
 	@media screen and (max-width: 1439.98px) {
 		height: 225px;
 	}
@@ -537,6 +545,10 @@
 	&__pagination {
 		top: 9% !important;
 	}
+}
+
+.swiper-portfolio__pagination {
+	top: calc(5% + 4px) !important;
 }
 
 .certification-goals-slider-wrap {
@@ -875,6 +887,14 @@
 	width: 430px;
 	height: 160px;
 	background-color: var(--mystic-color);
+
+	&--margin-bottom {
+		margin-bottom: 30px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
 
 	@media screen and (max-width: 1439.98px) {
 		width: 425px;
