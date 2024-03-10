@@ -269,6 +269,14 @@
 	&--padding-left {
 		padding-left: 30px;
 	}
+
+	&--hidden {
+		display: none;
+
+		@media screen and (max-width: 576px) {
+			display: flex;
+		}
+	}
 }
 
 .swiper {
