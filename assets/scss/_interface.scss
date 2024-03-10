@@ -526,6 +526,10 @@
 
 	&--services-height {
 		height: 655px;
+
+		@media screen and (max-width: 768px) {
+			display: none;
+		}
 	}
 
 	@media screen and (min-width: 1440px) and (max-width: 1559.98px) {
@@ -606,7 +610,7 @@
 }
 
 .certification-goals-slider-wrap {
-  position: relative;
+	position: relative;
 	width: 750px;
 	height: 410px;
 }
@@ -795,6 +799,12 @@
 	justify-content: space-between;
 	width: 100%;
 	gap: 30px;
+
+	&--hidden {
+		@media screen and (min-width: 768px) {
+			display: none;
+		}
+	}
 
 	&__card {
 		padding-bottom: 35px;
