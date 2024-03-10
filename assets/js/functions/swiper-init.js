@@ -135,3 +135,20 @@ const swiperPortfolio = new Swiper('.swiper-portfolio', {
 
 	effect: 'slide',
 });
+
+const swiperOtherPages = new Swiper('.swiper-other-pages', {
+	speed: 600,
+	slidesPerView: 'auto',
+	slidesPerGroup: 1,
+	spaceBetween: 10,
+
+	pagination: {
+		el: '.swiper-portfolio-pages_pagination',
+		clickable: true,
+		renderBullet: function (index, className) {
+			return '<button class="' + className + ' swiper-blue__bullet btn-reset"></button>';
+		},
+	},
+
+	effect: 'slide',
+});
