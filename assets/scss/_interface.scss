@@ -2018,3 +2018,47 @@
 		font-weight: 325;
 	}
 }
+
+.page-content {
+	padding-left: 50px;
+
+	&__title {
+		@include adaptive-font(40, 22);
+		font-weight: 700;
+		line-height: 100%;
+		text-transform: uppercase;
+
+		@media screen and (min-width: 1560px) {
+			font-size: 40px;
+		}
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	&__item {
+		margin-bottom: 10px;
+	}
+
+	&__link--blue-hover {
+		transition: color 0.4s;
+	}
+
+	&__link {
+		@include adaptive-font(22, 16);
+		font-weight: 700;
+		line-height: 173%;
+		text-transform: uppercase;
+
+		&:hover .page-content__link--blue-hover {
+			color: var(--blue-color);
+		}
+
+		@media screen and (min-width: 1560px) {
+			font-size: 22px;
+		}
+	}
+}
