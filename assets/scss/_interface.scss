@@ -2022,14 +2022,24 @@
 .page-content {
 	padding-left: 50px;
 
+	@media screen and (max-width: 768px) {
+		padding-left: 0;
+	}
+
 	&__title {
 		@include adaptive-font(40, 22);
+		margin: 0;
+		margin-bottom: 40px;
 		font-weight: 700;
 		line-height: 100%;
 		text-transform: uppercase;
 
 		@media screen and (min-width: 1560px) {
 			font-size: 40px;
+		}
+
+		@media screen and (max-width: 768px) {
+			margin-bottom: 30px;
 		}
 	}
 
@@ -2041,14 +2051,32 @@
 
 	&__item {
 		margin-bottom: 10px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		@media screen and (max-width: 768px) {
+			margin-bottom: 15px;
+		}
 	}
 
 	&__link--blue-hover {
 		transition: color 0.4s;
 	}
 
+	&__link--padding {
+		padding: 0 10px;
+
+		@media screen and (max-width: 768px) {
+			padding: 0 5px;
+		}
+	}
+
 	&__link {
 		@include adaptive-font(22, 16);
+		display: flex;
+		justify-content: flex-start;
 		font-weight: 700;
 		line-height: 173%;
 		text-transform: uppercase;
@@ -2059,6 +2087,10 @@
 
 		@media screen and (min-width: 1560px) {
 			font-size: 22px;
+		}
+
+		@media screen and (max-width: 768px) {
+			line-height: 112%;
 		}
 	}
 }
