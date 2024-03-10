@@ -119,6 +119,7 @@
 .big-title {
 	@include adaptive-font(64, 32);
 	margin: 0;
+	margin-bottom: 40px;
 	font-weight: 700;
 	line-height: 91%;
 	text-transform: uppercase;
@@ -160,6 +161,10 @@
 
 	@media screen and (min-width: 1560px) {
 		font-size: 64px;
+	}
+
+	@media screen and (max-width: 530px) {
+		margin-bottom: 20px;
 	}
 }
 
@@ -307,6 +312,11 @@
 	margin-bottom: 70px;
 	height: 515px;
 
+	&--height {
+		margin-bottom: 0;
+		height: 1515px;
+	}
+
 	@media screen and (max-width: 768px) {
 		height: 325px;
 	}
@@ -315,12 +325,21 @@
 .swiper-blue {
 	height: 470px;
 
+	&--height {
+		height: 1470px;
+	}
+
 	&__slide {
 		width: fit-content !important;
 	}
 
 	&__slide-inner {
+		margin-bottom: 30px;
 		width: 335px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
 
 		@media screen and (max-width: 767.98px) {
 			width: 285px;
@@ -337,6 +356,10 @@
 		display: flex;
 		justify-content: flex-end;
 		gap: 20px;
+
+		&--higher {
+			top: 2% !important;
+		}
 	}
 
 	&__bullet {
@@ -371,6 +394,10 @@
 	display: flex;
 	align-items: center;
 	height: 85px;
+
+	&--margin-bottom {
+		margin-bottom: 100px;
+	}
 }
 
 .swiper-clients {
@@ -1965,5 +1992,29 @@
 				border-top: 1px solid var(--dark-color);
 			}
 		}
+	}
+}
+
+.texts {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 130px;
+	gap: 30px;
+
+	@media screen and (max-width: 768px) {
+		flex-direction: column;
+		margin-bottom: 30px;
+		gap: 20px;
+	}
+
+	&--margin-bottom {
+		margin-bottom: 150px;
+	}
+
+	&__text {
+		margin: 0;
+		max-width: 750px;
+		font-weight: 325;
 	}
 }
