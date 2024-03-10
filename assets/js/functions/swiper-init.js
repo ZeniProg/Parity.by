@@ -119,13 +119,34 @@ const swiperPortfolio = new Swiper('.swiper-portfolio', {
 	},
 
 	breakpoints: {
-		1440: {
+		1560: {
 			slidesPerGroup: 4,
 			spaceBetween: 30,
 		},
-		1024: {
+		1440: {
+			slidesPerGroup: 3,
+			spaceBetween: 30,
+		},
+		768: {
 			slidesPerGroup: 2,
 			spaceBetween: 30,
+		},
+	},
+
+	effect: 'slide',
+});
+
+const swiperOtherPages = new Swiper('.swiper-other-pages', {
+	speed: 600,
+	slidesPerView: 'auto',
+	slidesPerGroup: 1,
+	spaceBetween: 10,
+
+	pagination: {
+		el: '.swiper-portfolio-pages_pagination',
+		clickable: true,
+		renderBullet: function (index, className) {
+			return '<button class="' + className + ' swiper-blue__bullet btn-reset"></button>';
 		},
 	},
 
