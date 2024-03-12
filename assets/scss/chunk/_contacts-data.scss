@@ -1,5 +1,9 @@
 .contacts-data {
-	margin-bottom: 100px;
+	padding-bottom: 100px;
+
+	@media screen and (max-width: 768px) {
+		padding-bottom: 50px;
+	}
 	&__wrap {
 		display: flex;
 		flex-direction: column;
@@ -13,6 +17,11 @@
 		margin-bottom: 100px;
 		width: 100%;
 		gap: 80px 30px;
+
+		@media screen and (max-width: 768px) {
+			margin-bottom: 50px;
+			gap: 40px;
+		}
 	}
 
 	&__content {
@@ -21,6 +30,10 @@
 		align-items: flex-start;
 		width: 100%;
 		max-width: 490px;
+
+		@media screen and (max-width: 768px) {
+			max-width: 300px;
+		}
 	}
 
 	&__name-messenger {
@@ -28,6 +41,10 @@
 		text-transform: uppercase;
 
 		&--margin-bottom {
+			margin-bottom: 20px;
+		}
+
+		@media screen and (max-width: 768px) {
 			margin-bottom: 20px;
 		}
 	}
@@ -77,6 +94,10 @@
 		margin-bottom: 20px;
 		font-weight: 900;
 		text-transform: uppercase;
+
+		@media screen and (max-width: 768px) {
+			margin-bottom: 10px;
+		}
 	}
 
 	&__address {
@@ -96,6 +117,11 @@
 		flex-wrap: wrap;
 		margin-bottom: 100px;
 		gap: 50px 30px;
+
+		@media screen and (max-width: 768px) {
+			margin-bottom: 50px;
+			gap: 40px;
+		}
 	}
 
 	&__card {
@@ -104,11 +130,19 @@
 		align-items: flex-start;
 		width: 100%;
 		max-width: 360px;
+
+		@media screen and (max-width: 768px) {
+			max-width: 300px;
+		}
 	}
 
 	&__card-text {
 		margin: 0;
 		margin-bottom: 30px;
+
+		@media screen and (max-width: 768px) {
+			margin-bottom: 15px;
+		}
 	}
 
 	&__card-job-title {
@@ -122,6 +156,10 @@
 		@media screen and (min-width: 1560px) {
 			font-size: 14px;
 		}
+
+		@media screen and (max-width: 768px) {
+			margin-bottom: 5px;
+		}
 	}
 
 	&__card-name {
@@ -130,6 +168,10 @@
 		align-items: flex-start;
 		margin-bottom: 20px;
 		font-weight: 900;
+
+		@media screen and (max-width: 768px) {
+			margin-bottom: 15px;
+		}
 	}
 
 	&__card-name--uppercase {
