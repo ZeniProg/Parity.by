@@ -1,0 +1,186 @@
+.contacts-data {
+	margin-bottom: 100px;
+	&__wrap {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	&__inner {
+		display: flex;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		margin-bottom: 100px;
+		width: 100%;
+		gap: 80px 30px;
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		width: 100%;
+		max-width: 490px;
+	}
+
+	&__name-messenger {
+		margin-bottom: 40px;
+		text-transform: uppercase;
+
+		&--margin-bottom {
+			margin-bottom: 20px;
+		}
+	}
+
+	&__link {
+		@include adaptive-font(36, 24);
+		font-weight: 900;
+		line-height: 63%;
+		transition: color 0.4s;
+
+		&:hover {
+			color: var(--blue-color);
+		}
+
+		@media screen and (min-width: 1560px) {
+			font-size: 36px;
+		}
+	}
+
+	&__content-messengers {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__messenger {
+		margin-right: 30px;
+		fill: var(--blue-color);
+		transition: fill 0.4s;
+
+		&:hover {
+			fill: var(--dark-color);
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	&__icon {
+		width: 48px;
+		height: 48px;
+	}
+
+	&__title {
+		margin: 0;
+		margin-bottom: 20px;
+		font-weight: 900;
+		text-transform: uppercase;
+	}
+
+	&__address {
+		text-transform: uppercase;
+		font-style: normal;
+		max-width: 240px;
+	}
+
+	&__text {
+		margin: 0;
+		text-transform: uppercase;
+	}
+
+	&__cards {
+		display: flex;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		margin-bottom: 100px;
+		gap: 50px 30px;
+	}
+
+	&__card {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		width: 100%;
+		max-width: 360px;
+	}
+
+	&__card-text {
+		margin: 0;
+		margin-bottom: 30px;
+	}
+
+	&__card-job-title {
+		@include adaptive-font(14, 12);
+		margin-bottom: 10px;
+		font-weight: 900;
+		line-height: 171%;
+		text-transform: uppercase;
+		opacity: 0.5;
+
+		@media screen and (min-width: 1560px) {
+			font-size: 14px;
+		}
+	}
+
+	&__card-name {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		margin-bottom: 20px;
+		font-weight: 900;
+	}
+
+	&__card-name--uppercase {
+		text-transform: uppercase;
+	}
+
+	&__card-inner {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	&__card-messenger {
+		text-transform: uppercase;
+	}
+
+	&__card-link {
+		transition: color 0.4s;
+
+		&:hover {
+			color: var(--blue-color);
+		}
+	}
+
+	&__information {
+		margin: 0;
+		max-width: 880px;
+		font-weight: 600;
+	}
+
+	&__information-link {
+		color: var(--blue-color);
+		transition: color 0.4s;
+		position: relative;
+
+		&::after {
+			position: absolute;
+			content: '';
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			border-top: 2px solid var(--blue-color);
+			transition: border-top 0.4s;
+		}
+
+		&:hover {
+			color: var(--dark-color);
+
+			&::after {
+				border-top: 2px solid var(--dark-color);
+			}
+		}
+	}
+}
