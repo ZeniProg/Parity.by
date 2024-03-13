@@ -16,6 +16,10 @@
 		@media screen and (min-width: 1560px) {
 			font-size: 64px;
 		}
+
+		@media screen and (max-width: 768px) {
+			margin-bottom: 20px;
+		}
 	}
 
 	&__title--blue-color {
@@ -28,6 +32,10 @@
 		align-items: center;
 		margin-bottom: 70px;
 		gap: 10px;
+
+		@media screen and (max-width: 768px) {
+			margin-bottom: 50px;
+		}
 	}
 
 	&__link {
@@ -69,6 +77,10 @@
 		align-items: flex-start;
 		margin-bottom: 50px;
 		max-width: 750px;
+
+		@media screen and (max-width: 768px) {
+			margin-bottom: 30px;
+		}
 	}
 
 	&__text {
@@ -85,6 +97,11 @@
 
 		@media screen and (min-width: 1560px) {
 			font-size: 18px;
+		}
+
+		@media screen and (max-width: 768px) {
+			margin-bottom: 20px;
+			line-height: 111%;
 		}
 	}
 
@@ -106,6 +123,24 @@
 			top: 10px;
 			left: 20px;
 			z-index: -1;
+		}
+
+		@media screen and (max-width: 992px) {
+			max-width: 600px;
+		}
+
+		@media screen and (max-width: 768px) {
+			margin-bottom: 25px;
+			max-width: 380px;
+		}
+
+		@media screen and (max-width: 425px) {
+			max-width: 295px;
+
+			&::after {
+				top: 5px;
+				left: 5px;
+			}
 		}
 	}
 
