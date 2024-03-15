@@ -14,6 +14,10 @@
 		width: 100%;
 		max-width: 1010px;
 		min-height: 470px;
+
+		@media screen and (max-width: 768px) {
+			min-height: 245px;
+		}
 	}
 
 	&__background {
@@ -38,10 +42,38 @@
 			background-color: var(--dark-color);
 			opacity: 0.8;
 		}
+
+		@media screen and (max-width: 768px) {
+			height: 245px;
+		}
 	}
 
 	&__title {
-		margin-bottom: 0;
+		@media screen and (max-width: 768px) {
+			@include adaptive-font(64, 22);
+			margin-bottom: 0;
+			max-width: 370px;
+			max-height: 180px;
+			overflow-y: auto;
+		}
+
+		@media screen and (max-width: 425px) {
+			max-width: 250px;
+		}
+	}
+
+	&__form-title {
+		@media screen and (max-width: 1024px) {
+			margin-bottom: 20px;
+		}
+
+		&--flex {
+			@media screen and (max-width: 1024px) {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+			}
+		}
 	}
 
 	&__inner-form {
@@ -63,6 +95,30 @@
 			background-color: var(--dark-color);
 			z-index: -2;
 		}
+
+		@media screen and (max-width: 1024px) {
+			max-width: 300px;
+		}
+
+		@media screen and (max-width: 768px) {
+			display: none;
+		}
+
+		&--hidden {
+			display: none;
+
+			@media screen and (max-width: 768px) {
+				display: flex;
+				margin: 0 auto;
+				max-width: 300px;
+				min-height: 410px;
+
+				&::after {
+					left: -300px;
+					height: 410px;
+				}
+			}
+		}
 	}
 
 	&__form-row {
@@ -70,6 +126,10 @@
 		flex-direction: column;
 		margin-bottom: 20px;
 		gap: 20px;
+
+		@media screen and (max-width: 768px) {
+			gap: 10px;
+		}
 	}
 
 	&__form-wrap {
@@ -85,5 +145,26 @@
 		margin-bottom: 10px;
 		width: 100%;
 		max-width: 350px;
+	}
+
+	&__btn {
+		@media screen and (max-width: 1024px) {
+			padding: 20px 15px 20px 30px;
+			max-width: 250px;
+
+			&::before {
+				width: 85%;
+				max-width: 165px;
+			}
+		}
+	}
+
+	&__input {
+		min-width: 345px;
+
+		@media screen and (max-width: 1024px) {
+			min-width: 300px;
+			max-width: 300px;
+		}
 	}
 }

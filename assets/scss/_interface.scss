@@ -142,8 +142,6 @@
 
 	&__arrow {
 		position: relative;
-		left: 22px;
-		bottom: -16px;
 		border: 6px solid transparent;
 		border-top: 6px solid var(--light-color);
 		width: 6px;
@@ -1927,6 +1925,12 @@
 
 		@media screen and (min-width: 1560px) {
 			font-size: 14px;
+		}
+
+		&--no-padding-left {
+			@media screen and (max-width: 768px) {
+				padding-left: 0;
+			}
 		}
 	}
 }
