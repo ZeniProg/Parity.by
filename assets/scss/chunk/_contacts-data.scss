@@ -1,0 +1,229 @@
+.contacts-data {
+	padding-bottom: 100px;
+
+	&__wrap {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	&__inner {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		margin-bottom: 100px;
+		width: 100%;
+		gap: 80px 30px;
+
+		@media screen and (max-width: 768px) {
+			margin-bottom: 50px;
+			gap: 40px;
+		}
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		width: 100%;
+		max-width: 490px;
+
+		@media screen and (max-width: 768px) {
+			max-width: 300px;
+		}
+	}
+
+	&__name-messenger {
+		margin-bottom: 40px;
+		text-transform: uppercase;
+
+		&--margin-bottom {
+			margin-bottom: 20px;
+		}
+
+		@media screen and (max-width: 768px) {
+			margin-bottom: 20px;
+		}
+	}
+
+	&__link {
+		@include adaptive-font(36, 24);
+		font-weight: 900;
+		line-height: 63%;
+		transition: color 0.4s;
+
+		&:hover {
+			color: var(--blue-color);
+		}
+
+		@media screen and (min-width: 1560px) {
+			font-size: 36px;
+		}
+	}
+
+	&__content-messengers {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__messenger {
+		margin-right: 30px;
+		fill: var(--blue-color);
+		transition: fill 0.4s;
+
+		&:hover {
+			fill: var(--dark-color);
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	&__icon {
+		width: 48px;
+		height: 48px;
+	}
+
+	&__title {
+		margin: 0;
+		margin-bottom: 20px;
+		font-weight: 900;
+		text-transform: uppercase;
+
+		@media screen and (max-width: 768px) {
+			margin-bottom: 10px;
+		}
+	}
+
+	&__address {
+		max-width: 240px;
+		font-style: normal;
+		text-transform: uppercase;
+	}
+
+	&__text {
+		margin: 0;
+		text-transform: uppercase;
+	}
+
+	&__cards {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		margin-bottom: 100px;
+		gap: 50px 30px;
+
+		@media screen and (max-width: 768px) {
+			margin-bottom: 50px;
+			gap: 40px;
+		}
+	}
+
+	&__card {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		width: 100%;
+		max-width: 360px;
+
+		@media screen and (max-width: 768px) {
+			max-width: 300px;
+		}
+	}
+
+	&__card-text {
+		margin: 0;
+		margin-bottom: 30px;
+
+		@media screen and (max-width: 768px) {
+			margin-bottom: 15px;
+		}
+	}
+
+	&__card-job-title {
+		@include adaptive-font(14, 12);
+		margin-bottom: 10px;
+		font-weight: 900;
+		line-height: 171%;
+		text-transform: uppercase;
+		opacity: 0.5;
+
+		@media screen and (min-width: 1560px) {
+			font-size: 14px;
+		}
+
+		@media screen and (max-width: 768px) {
+			margin-bottom: 5px;
+		}
+	}
+
+	&__card-name {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		margin-bottom: 20px;
+		font-weight: 900;
+
+		@media screen and (max-width: 768px) {
+			margin-bottom: 15px;
+		}
+	}
+
+	&__card-name--uppercase {
+		text-transform: uppercase;
+	}
+
+	&__card-inner {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	&__card-messenger {
+		text-transform: uppercase;
+	}
+
+	&__card-link {
+		transition: color 0.4s;
+
+		&:hover {
+			color: var(--blue-color);
+		}
+	}
+
+	&__information {
+		margin: 0;
+		max-width: 880px;
+		font-weight: 600;
+	}
+
+	&__information-link {
+		position: relative;
+		color: var(--blue-color);
+		transition: color 0.4s;
+
+		&::after {
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			border-top: 2px solid var(--blue-color);
+			width: 100%;
+			transition: border-top 0.4s;
+		}
+
+		&:hover {
+			color: var(--dark-color);
+
+			&::after {
+				border-top: 2px solid var(--dark-color);
+			}
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		padding-bottom: 50px;
+	}
+}

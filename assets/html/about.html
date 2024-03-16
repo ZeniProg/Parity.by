@@ -14,7 +14,11 @@
 	<body>
 		<div class="site-container">
 			@include('../components/header/header.html') @include('chunk/about-breadcrumbs.html')
-			<main class="main">@include('chunk/projects.html') @include('chunk/mass-media.html')</main>
+			<main class="main">
+				@include('chunk/about-hero.html') @include('chunk/about-numbers.html')
+				@include('chunk/projects.html') @include('chunk/mass-media.html')
+				@include('chunk/question.html')
+			</main>
 			@include('chunk/footer.html')
 		</div>
 		<script src="js/scripts.min.js"></script>

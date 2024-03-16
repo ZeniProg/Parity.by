@@ -14,4 +14,27 @@
 			margin-bottom: 0;
 		}
 	}
+
+	&__card {
+		@media screen and (max-width: 576px) {
+			min-height: 345px;
+		}
+	}
+
+	&__card-content {
+		padding: 85px 35px 90px 95px;
+
+		@media screen and (max-width: 576px) {
+			padding: 20px 15px 75px 25px;
+		}
+	}
+
+	&__card-title {
+		@include adaptive-font(26, 16);
+		line-height: 77%;
+
+		@media (min-width: 1560px) {
+			font-size: 26px;
+		}
+	}
 }
