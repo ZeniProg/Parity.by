@@ -132,6 +132,7 @@
 	&__text {
 		@include adaptive-font(14, 14);
 		margin: 0;
+		font-weight: 300;
 		line-height: 100%;
 	}
 
